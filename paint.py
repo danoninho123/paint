@@ -3,15 +3,36 @@
 Exercises
 
 1. Add a color.
+    eu troquei as letras de ativação, estava maiúscula troquei por minúscula
+
 2. Complete circle.
+codigo utilizado
+    raio=abs(end.x - start.x)+abs(end.y - start.y) 
+    circle(raio/2)
+
 3. Complete rectangle.
+codigo utilizado
+    up()
+    goto(start.x, start.y)
+    down()
+
+    goto(end.x, start.y)
+    goto(end.x, end.y)
+    goto(start.x, end.y)
+    goto(start.x, start.y)
 4. Complete triangle.
+codigo utilizado
+    goto(end.x, start.y)
+    goto(((end.x-start.x)/2)+start.x, end.y)
+    goto(start.x, start.y)
+
 5. Add width parameter.
 """
 
 from turtle import *
 
 from freegames import vector
+
 
 
 def line(start, end):
@@ -101,11 +122,11 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
-onkey(lambda: color('black'), 'K')
-onkey(lambda: color('white'), 'W')
-onkey(lambda: color('green'), 'G')
-onkey(lambda: color('blue'), 'B')
-onkey(lambda: color('red'), 'R')
+onkey(lambda: color('black'), 'k')
+onkey(lambda: color('white'), 'w')
+onkey(lambda: color('green'), 'g')
+onkey(lambda: color('blue'), 'b')
+onkey(lambda: color('red'), 'r')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circulo), 'c')
