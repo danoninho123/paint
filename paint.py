@@ -4,6 +4,10 @@ Exercises
 
 1. Add a color.
     eu troquei as letras de ativação, estava maiúscula troquei por minúscula
+    add a cor pink e a cor yellow 
+    codigo
+    onkey(lambda: color('pink'),'p')
+    onkey(lambda: color('yellow'),'y')
 
 2. Complete circle.
 codigo utilizado
